@@ -8,6 +8,7 @@
 #include<limits>
 #include<gTexture.h>
 #include<baseglib.h>
+#include<deltaTime.h>
 
 gTexture::gTexture(){
 	mRPointer=NULL;
@@ -116,7 +117,7 @@ int gTexture::getW(){
 int gTexture::getH(){
 	return mH;
 }
-bool gTexture::render(int rX,int rY,SDL_Rect* rClip,double rAngle,SDL_Point* rCenter,double resW,double resH){
+bool gTexture::render(float rX,float rY,SDL_Rect* rClip,double rAngle,SDL_Point* rCenter,double resW,double resH){
 	SDL_Rect renderRect={rX,rY,mW,mH};
 	if(rClip!=NULL){
 		renderRect.w=rClip->w;

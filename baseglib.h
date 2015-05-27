@@ -9,6 +9,7 @@
 #include<vector>
 #include<limits>
 #include<gTexture.h>
+#include<deltaTime.h>
 
 extern int glib_Error;
 #define glib_SDLINITERROR 1

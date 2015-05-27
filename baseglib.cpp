@@ -8,6 +8,7 @@
 #include<limits>
 #include<baseglib.h>
 #include<gTexture.h>
+#include<deltaTime.h>
 
 int glib_Error;
 

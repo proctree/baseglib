@@ -9,6 +9,7 @@
 #include<vector>
 #include<limits>
 #include<baseglib.h>
+#include<deltaTime.h>
 
 class gTexture{
 	private:
@@ -29,7 +30,7 @@ class gTexture{
 		bool TTFloadTex(TTF_Font* gFont,std::string gText,SDL_Color gColor,bool gShaded=false,SDL_Color gBG=SDL_Color());
 		int getW();
 		int getH();
-		bool render(int rX,int rY,SDL_Rect* rClip=NULL,double angle=0.0,SDL_Point* center=NULL,double resW=1.0,double resH=1.0);
+		bool render(float rX,float rY,SDL_Rect* rClip=NULL,double angle=0.0,SDL_Point* center=NULL,double resW=1.0,double resH=1.0);
 };
 
 #endif
